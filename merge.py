@@ -25,3 +25,13 @@ def mergeSort(arr):
     left = mergeSort(arr[:mid])
     right = mergeSort(arr[mid:])
     return merge(left, right)
+
+# Driver Code
+if __name__ == '__main__':
+    a = [12, 11, 13, 5, 6, 7]
+    print("Given array is")
+    print(a)
+    a = mergeSort(a)
+    print("\nSorted array is ")
+    print(a)
+
